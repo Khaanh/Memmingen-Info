@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function FooterPage() {
   return (
-    <footer className=''>
+    <footer className='text-gray-950'>
       <div className="container">
-        Footer Page
+        Footer page
       </div>
     </footer>
   )

@@ -1,0 +1,83 @@
+[{
+  "zahnarzt": [{
+      "name": "name",
+      "city": "city",
+      "tel": "tel",
+      "address": "address",
+      "web-site": "web-site",
+      "comments": ["1", "2", "3"]
+    },
+    {
+      "name": "name1",
+      "city": "city1",
+      "tel": "tel1",
+      "address": "address1",
+      "web-site": "web-site1",
+      "comments": ["1", "2", "3"]
+    },
+    {
+      "name": "name2",
+      "city": "city2",
+      "tel": "tel2",
+      "address": "address2",
+      "web-site": "web-site3",
+      "comments": ["1", "2", "3"]
+    }
+  ],
+  "frauarzt": [{
+      "name": "name3",
+      "city": "city3",
+      "tel": "tel3",
+      "address": "address3",
+      "web-site": "web-site3",
+      "comments": ["1", "2", "3"]
+
+    },
+    {
+      "name": "name4",
+      "city": "city4",
+      "tel": "tel4",
+      "address": "address4",
+      "web-site": "web-site4",
+      "comments": ["1", "2", "3"]
+
+    },
+    {
+      "name": "name5",
+      "city": "city5",
+      "tel": "tel5",
+      "address": "address5",
+      "web-site": "web-site5",
+      "comments": ["1", "2", "3"]
+
+    }
+  ],
+  "kardiologie": [{
+      "name": "name3",
+      "city": "city3",
+      "tel": "tel3",
+      "address": "address3",
+      "web-site": "web-site3",
+      "comments": ["1", "2", "3"]
+
+    },
+    {
+      "name": "name4",
+      "city": "city4",
+      "tel": "tel4",
+      "address": "address4",
+      "web-site": "web-site4",
+      "comments": ["1", "2", "3"]
+
+    },
+    {
+      "name": "name5",
+      "city": "city5",
+      "tel": "tel5",
+      "address": "address5",
+      "web-site": "web-site5",
+      "comments": ["1", "2", "3"]
+
+    }
+  ]
+}]
