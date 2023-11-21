@@ -2,45 +2,50 @@ import React from 'react'
 import { promises as fs } from 'fs'
 import { Metadata } from 'next';
 
-async function getData() {
-  const doctorsData = await fs.readFile(process.cwd() + '/app/assets/doctorsInfo.json', 'utf8');
-  const doctorsInfo = await JSON.parse(doctorsData);
-  return doctorsInfo
-}
+/**
+ * ! FOR CATEGORY PAGE DOES'NT WORK :(
+ * ? FOR NEXT TIME.
+*/
 
-type Props = {
-  category: string,
-}
+// async function getData() {
+//   const doctorsData = await fs.readFile(process.cwd() + '/app/assets/doctorsInfo.json', 'utf8');
+//   const doctorsInfo = await JSON.parse(doctorsData);
+//   return doctorsInfo
+// }
 
-export async function generateMetadata({ params: { category }, }: Props): Promise<Metadata> {
+// type Props = {
+//   category: string,
+// }
 
-  return {
-    title: category
-  }
-}
+// export async function generateMetadata({ params: { category }, }: Props): Promise<Metadata> {
+
+//   return {
+//     title: category
+//   }
+// }
 
 
-export default async function Specialist({ params: { category }, }: Props) {
-  const doctorsList = await getData();
-  const zahnarztArr = doctorsList.filter(item => item.category === 'zahnarzt')
+// export default async function Specialist({ params: { category }, }: Props) {
+//   const doctorsList = await getData();
+//   const zahnarztArr = doctorsList.filter(item => item.category === 'zahnarzt')
 
-  console.log('category:', category)
-  console.log('doctorsList:', doctorsList)
-  console.log('zahnarztArr:', zahnarztArr)
+//   console.log('category:', category)
+//   console.log('doctorsList:', doctorsList)
+//   console.log('zahnarztArr:', zahnarztArr)
 
-  return (
-    <>
-      {
-        zahnarztArr.map((item) => {
-          return (
-            <div key={item.name}>
-              <p>{item.name}</p>
-              <p>{item.city}</p>
-              <p>{item.tel}</p>
-            </div>
-          )
-        })
-      }
-    </>
-  )
-}
+//   return (
+//     <>
+//       {
+//         zahnarztArr.map((item) => {
+//           return (
+//             <div key={item.name}>
+//               <p>{item.name}</p>
+//               <p>{item.city}</p>
+//               <p>{item.tel}</p>
+//             </div>
+//           )
+//         })
+//       }
+//     </>
+//   )
+// }
