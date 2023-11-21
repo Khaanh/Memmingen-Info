@@ -1,0 +1,54 @@
+[{
+    "category": "frauarzt",
+    "name": "name",
+    "city": "city",
+    "tel": "tel",
+    "address": "address",
+    "web-site": "web-site",
+    "comments": ["1", "2", "3"]
+  }, {
+    "category": "frauarzt",
+    "name": "frauarzt1",
+    "city": "frauarzt1",
+    "tel": "frauarzt1",
+    "address": "frauarzt1",
+    "web-site": "web-site1",
+    "comments": ["1", "2", "3"]
+  },
+  {
+    "category": "kardiologie",
+    "name": "kardiologie",
+    "city": "kardiologie",
+    "tel": "kardiologie",
+    "address": "kardiologie",
+    "web-site": "kardiologie",
+    "comments": ["1", "2", "3"]
+  },
+  {
+    "category": "kardiologie",
+    "name": "kardiologie1",
+    "city": "kardiologie1",
+    "tel": "kardiologie1",
+    "address": "kardiologie1",
+    "web-site": "kardiologie1",
+    "comments": ["1", "2", "3"]
+  },
+  {
+    "category": "zahnarzt",
+    "name": "zahnarzt1",
+    "city": "zahnarzt1",
+    "tel": "zahnarzt1",
+    "address": "zahnarzt1",
+    "web-site": "zahnarzt1",
+    "comments": ["1", "2", "3"]
+  },
+  {
+    "category": "zahnarzt",
+    "name": "zahnarzt2",
+    "city": "zahnarzt2",
+    "tel": "zahnarzt2",
+    "address": "zahnarzt2",
+    "web-site": "zahnarzt2",
+    "comments": ["1", "2", "3"]
+  }
+]

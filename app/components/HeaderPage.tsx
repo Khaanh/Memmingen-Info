@@ -1,22 +1,15 @@
 import Link from 'next/link';
 import React from 'react';
+import Navigation from './Navigation';
 // import Doctorsdata from './assets/DoctorsData.json'
 
 export default function HeaderPage() {
   return (
-    <header className='text-gray-950'>
+    <header className=' text-gray-950 mt-6 mb-14'>
       <div className="container">
-        <div className="logo">
-          <Link href='/'>Logo</Link>
-        </div>
         <nav>
-          <ul>
-            <li>
-              <Link href='/doctors'>Доктора</Link>
-              <Link href='/sos'>SOS</Link>
-              <Link href='/documents'>Документы</Link>
-            </li>
-          </ul>
+          <Link className='flex items-center justify-center mb-6' href='/'>Logo</Link>
+          <Navigation />
         </nav>
       </div>
     </header>

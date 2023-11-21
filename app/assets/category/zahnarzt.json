@@ -1,0 +1,15 @@
+[{
+  "name": "name",
+  "city": "city",
+  "tel": "tel",
+  "address": "address",
+  "web-site": "web-site",
+  "comments": ["1", "2", "3"]
+}, {
+  "name": "name1",
+  "city": "city1",
+  "tel": "tel1",
+  "address": "address1",
+  "web-site": "web-site1",
+  "comments": ["1", "2", "3"]
+}]
