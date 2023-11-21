@@ -33,7 +33,7 @@ export default async function Specialist({ params: { category }, }: Props) {
       {
         zahnarztArr.map((item) => {
           return (
-            <div>
+            <div key={item.name}>
               <p>{item.name}</p>
               <p>{item.city}</p>
               <p>{item.tel}</p>
