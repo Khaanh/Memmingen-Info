@@ -7,15 +7,15 @@ import { Metadata } from 'next';
  * ? FOR NEXT TIME.
 */
 
-// async function getData() {
-//   const doctorsData = await fs.readFile(process.cwd() + '/app/assets/doctorsInfo.json', 'utf8');
-//   const doctorsInfo = await JSON.parse(doctorsData);
-//   return doctorsInfo
-// }
+async function getData() {
+  const doctorsData = await fs.readFile(process.cwd() + '/app/assets/doctorsInfo.json', 'utf8');
+  const doctorsInfo = await JSON.parse(doctorsData);
+  return doctorsInfo
+}
 
-// type Props = {
-//   category: string,
-// }
+type Props = {
+  category: string,
+}
 
 // export async function generateMetadata({ params: { category }, }: Props): Promise<Metadata> {
 
@@ -25,27 +25,10 @@ import { Metadata } from 'next';
 // }
 
 
-// export default async function Specialist({ params: { category }, }: Props) {
-//   const doctorsList = await getData();
-//   const zahnarztArr = doctorsList.filter(item => item.category === 'zahnarzt')
-
-//   console.log('category:', category)
-//   console.log('doctorsList:', doctorsList)
-//   console.log('zahnarztArr:', zahnarztArr)
-
-//   return (
-//     <>
-//       {
-//         zahnarztArr.map((item) => {
-//           return (
-//             <div key={item.name}>
-//               <p>{item.name}</p>
-//               <p>{item.city}</p>
-//               <p>{item.tel}</p>
-//             </div>
-//           )
-//         })
-//       }
-//     </>
-//   )
-// }
+export default async function Specialist() {
+  return (
+    <>
+      <h1>Category page</h1>
+    </>
+  )
+}
