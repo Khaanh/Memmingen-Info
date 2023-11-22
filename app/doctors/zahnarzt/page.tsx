@@ -2,6 +2,11 @@ import React from 'react'
 import { promises as fs } from 'fs'
 
 
+/**
+ * 22/11/23
+ * TODO replace right type for doc: any !
+ * {doctorsInfo.map((doc: any) => { 
+ */
 
 async function Zahnarzt() {
   const doctorsData = await fs.readFile(process.cwd() + '/app/assets/category/zahnarzt.json', 'utf8');
@@ -11,7 +16,7 @@ async function Zahnarzt() {
 
   return (
     <div className='flex w-full'>
-      {doctorsInfo.map((doc) => {
+      {doctorsInfo.map((doc: any) => {
         return (
           <div key={doc.name} className='mx-3 w-1/3'>
             <div>
