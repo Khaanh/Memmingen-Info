@@ -3,13 +3,15 @@
   "city": "city",
   "tel": "tel",
   "address": "address",
-  "web-site": "web-site",
+  "website": "web-site",
+  "picure": "picture",
   "comments": ["1", "2", "3"]
 }, {
   "name": "name1",
   "city": "city1",
   "tel": "tel1",
   "address": "address1",
-  "web-site": "web-site1",
+  "website": "web-site1",
+  "picure": "picture",
   "comments": ["1", "2", "3"]
 }]

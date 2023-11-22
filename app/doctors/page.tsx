@@ -1,13 +1,34 @@
 import Link from 'next/link'
 import React from 'react'
+import { promises as fs } from 'fs'
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Список врачей"
 }
 
+async function getData() {
+  const doctorsData = await fs.readFile(process.cwd() + '/app/assets/doctorsInfo.json', 'utf8');
+  const doctorsInfo = await JSON.parse(doctorsData);
+  return doctorsInfo
+}
+
 export default async function Doctors() {
-  const doctorsCategory = ['Стоматолог', 'Кардиолог', 'Гинеколог']
+  // const doctorsCategory = ['Стоматолог', 'Кардиолог', 'Гинеколог']
+  const doctorsCategory = [
+    {
+      category: "zahnarzt",
+      translate: "Стоматолог"
+    },
+    {
+      category: "frauarzt",
+      translate: "Кардиолог"
+    },
+    {
+      category: "kardiologie",
+      translate: "Гинеколог"
+    },
+  ]
 
   return (
     <div className='flex min-h-screen flex-col'>
@@ -17,12 +38,8 @@ export default async function Doctors() {
             doctorsCategory.map((category) => {
               return (
                 <>
-                  <div key={category} className='border-2 border-cyan-200 rounded-lg px-3 py-2 m-2 inline-flex text-center text-3xl'>
-                    <span>{category}</span>
-                  </div>
-
-                  <div className="tab-panel">
-
+                  <div key={category.category} className='border-2 border-cyan-200 rounded-lg px-3 py-2 m-2 inline-flex text-center text-3xl'>
+                    <Link href={`doctors/${category.category}`}>{category.translate}</Link>
                   </div>
                 </>
               )

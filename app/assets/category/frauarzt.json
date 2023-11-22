@@ -3,13 +3,15 @@
   "city": "frauarzt1",
   "tel": "frauarzt1",
   "address": "frauarzt1",
-  "web-site": "frauarzt1",
+  "website": "frauarzt1",
+  "picure": "picture",
   "comments": ["1", "2", "3"]
 }, {
   "name": "frauarzt2",
   "city": "frauarzt2",
   "tel": "frauarzt2",
   "address": "frauarzt2",
-  "web-site": "frauarzt2",
+  "website": "frauarzt2",
+  "picure": "picture",
   "comments": ["1", "2", "3"]
 }]
