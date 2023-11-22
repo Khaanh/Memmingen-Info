@@ -1,17 +1,37 @@
 [{
-  "name": "name",
-  "city": "city",
-  "tel": "tel",
-  "address": "address",
-  "website": "web-site",
-  "picure": "picture",
-  "comments": ["1", "2", "3"]
-}, {
-  "name": "name1",
-  "city": "city1",
-  "tel": "tel1",
-  "address": "address1",
-  "website": "web-site1",
-  "picure": "picture",
-  "comments": ["1", "2", "3"]
-}]
+    "name": "Hariolf Fakler",
+    "city": "Memmingen",
+    "tel": "+49 8331 924 833-0",
+    "address": "Kramerstraße 12, 87700 Memmingen ",
+    "google": "https://www.google.com/maps?sca_esv=584679428&output=search&q=Kramerstra%C3%9Fe+12+87700+Memmingen&source=lnms&entry=mc&sa=X&ved=2ahUKEwi069m-0diCAxUlh_0HHVN6AhIQ0pQJegQIChAB",
+    "website": "https://www.dr-fakler.de/",
+    "picture": "../../assets/img/zahnarzt-01.jpg",
+    "comments": ["1", "2", "3"]
+  }, {
+    "name": "name1",
+    "city": "city1",
+    "tel": "tel1",
+    "address": "address1",
+    "website": "web-site1",
+    "picture": "picture",
+    "comments": ["1", "2", "3"]
+  },
+  {
+    "name": "name2",
+    "city": "city2",
+    "tel": "tel2",
+    "address": "address2",
+    "website": "web-site2",
+    "picture": "picture",
+    "comments": ["1", "2", "3"]
+  },
+  {
+    "name": "name3",
+    "city": "city3",
+    "tel": "tel3",
+    "address": "address3",
+    "website": "web-site3",
+    "picture": "picture",
+    "comments": ["1", "2", "3"]
+  }
+]
