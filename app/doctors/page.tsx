@@ -25,12 +25,20 @@ export default async function Doctors() {
       translate: "Дерматолог"
     },
     {
+      category: "urologe",
+      translate: "Уролог"
+    },
+    {
       category: "frauarzt",
       translate: "Кардиолог"
     },
     {
       category: "kardiologie",
       translate: "Гинеколог"
+    },
+    {
+      category: "gastroenterologe",
+      translate: "Гастроэнтеролог"
     },
   ]
 
