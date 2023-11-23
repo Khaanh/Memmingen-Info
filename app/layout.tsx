@@ -20,11 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-white`}>
-        <HeaderPage />
-        <main className="container">
-          {children}
-        </main>
-        <FooterPage />
+        <div className='flex flex-col justify-between min-h-screen'>
+          <HeaderPage />
+          <main className="container flex-initial">
+            {children}
+          </main>
+          <FooterPage />
+        </div>
       </body>
     </html>
   )

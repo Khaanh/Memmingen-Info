@@ -5,7 +5,7 @@ import Navigation from './Navigation';
 
 export default function HeaderPage() {
   return (
-    <header className=' text-gray-950 mt-6 mb-14'>
+    <header className='flex flex-initial text-gray-950 mt-6 mb-14'>
       <div className="container">
         <nav>
           <Link className='flex items-center justify-center mb-6' href='/'>Logo</Link>
