@@ -1,17 +1,31 @@
 [{
-  "name": "frauarzt1",
-  "city": "frauarzt1",
-  "tel": "frauarzt1",
-  "address": "frauarzt1",
-  "website": "frauarzt1",
-  "picure": "picture",
-  "comments": ["1", "2", "3"]
-}, {
-  "name": "frauarzt2",
-  "city": "frauarzt2",
-  "tel": "frauarzt2",
-  "address": "frauarzt2",
-  "website": "frauarzt2",
-  "picure": "picture",
-  "comments": ["1", "2", "3"]
-}]
+    "name": "",
+    "city": "",
+    "tel": "",
+    "address": "",
+    "google": "",
+    "website": "",
+    "picture": "",
+    "comments": []
+  },
+  {
+    "name": "",
+    "city": "",
+    "tel": "",
+    "address": "",
+    "google": "",
+    "website": "",
+    "picture": "",
+    "comments": []
+  },
+  {
+    "name": "",
+    "city": "",
+    "tel": "",
+    "address": "",
+    "google": "",
+    "website": "",
+    "picture": "",
+    "comments": []
+  }
+]

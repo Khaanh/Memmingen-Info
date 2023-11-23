@@ -13,8 +13,8 @@ import Image from 'next/image';
  *  
  */
 
-async function Zahnarzt() {
-  const doctorsData = await fs.readFile(process.cwd() + '/app/assets/category/zahnarzt.json', 'utf8');
+async function Dermatologe() {
+  const doctorsData = await fs.readFile(process.cwd() + '/app/assets/category/dermatologe.json', 'utf8');
   const doctorsInfo = JSON.parse(doctorsData);
 
   console.log('doctorsInfo', doctorsInfo)
@@ -87,4 +87,4 @@ async function Zahnarzt() {
   )
 }
 
-export default Zahnarzt
+export default Dermatologe
