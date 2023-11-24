@@ -17,7 +17,9 @@ async function Urologe() {
   const doctorsData = await fs.readFile(process.cwd() + '/app/assets/category/urologe.json', 'utf8');
   const doctorsInfo = JSON.parse(doctorsData);
 
-  console.log('doctorsInfo', doctorsInfo)
+  const handleTel = () => {
+    console.log('asdd')
+  }
 
   return (
     <div className='grid grid-cols-2 gap-4'>

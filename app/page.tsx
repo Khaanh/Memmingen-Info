@@ -3,9 +3,13 @@ import Script from 'next/script'
 /**
  * todo list 23/11/23
  * TODO: function href="tel+..."
- * TODO: Mobile
- * TODO: Google analytics
+ * TODO: Responsive 
+ * TODO: Google analytics -- done
  * TODO: Emergency-number page
+ * 
+ * todo list 24/11/23
+ * TODO: from train to airport
+ * TODO: btn go back
  */
 export default function Home() {
   return (
