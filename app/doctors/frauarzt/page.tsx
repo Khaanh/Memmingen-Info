@@ -24,7 +24,8 @@ async function Frauarzt() {
       {doctorsInfo.map((doc: any) => {
         return (
           <div key={doc.name} className='mb-4 border-2 rounded overflow-hidden border-cyan-400'>
-            <div className='mb-2'>
+            <div className='mb-2 h-56 overflow-hidden bg-cover bg-no-repeat' style={{ backgroundImage: `url(${doc.picture})` }}>
+              {/* <div className='mb-2'>
               <Image
                 src={`${doc.picture}`}
                 width={750}
@@ -33,7 +34,7 @@ async function Frauarzt() {
                 quality={75}
                 loading="lazy"
                 unoptimized
-              />
+              /> */}
             </div>
 
             <div className='px-3'>
