@@ -21,7 +21,7 @@ export default function Navigation() {
         navItems.map((link) => {
           return (
             <li key={link.label} className='mx-4 my-2 border-2 border-blue-700 rounded-md px-2 py-1'>
-              <Link className='text-3xl' href={`/${link.href}`}> {link.label}</Link>
+              <Link className='flex text-3xl text-center' href={`/${link.href}`}> {link.label}</Link>
             </li>
           )
         })

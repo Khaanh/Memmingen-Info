@@ -51,7 +51,7 @@ export default async function Doctors() {
               return (
                 <>
                   <div key={category.category} className='border-2 text-gray-900 border-cyan-200 rounded-lg px-3 py-2 m-2 inline-flex text-center text-3xl'>
-                    <Link href={`doctors/${category.category}`}>{category.translate}</Link>
+                    <Link href={`doctors/${category.category}`} className='text-center'>{category.translate}</Link>
                   </div>
                 </>
               )
@@ -59,7 +59,6 @@ export default async function Doctors() {
           }
         </div>
       </div>
-      Страница докторов
     </div>
   )
 

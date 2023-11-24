@@ -20,10 +20,10 @@ async function Zahnarzt() {
   console.log('doctorsInfo', doctorsInfo)
 
   return (
-    <div className='grid grid-cols-2 gap-4'>
+    <div className='grid lg:grid-cols-2 gap-4'>
       {doctorsInfo.map((doc: any) => {
         return (
-          <div key={doc.name} className='mb-4 border-2 rounded overflow-hidden border-cyan-400'>
+          <div key={doc.name} className='border-2 rounded overflow-hidden border-cyan-400'>
             <div className='mb-2 h-56 overflow-hidden bg-cover bg-no-repeat' style={{ backgroundImage: `url(${doc.picture})` }}>
               {/* <Image
                 // src={`${doc.picture}`}
