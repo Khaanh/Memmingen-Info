@@ -1,15 +1,18 @@
 import Script from 'next/script'
 
 /**
- * todo list 23/11/23
+ * *todo list 23/11/23
  * TODO: function href="tel+..." DONE
  * TODO: Responsive DONE
  * TODO: Google analytics DONE
  * TODO: Emergency-number page
  * 
- * todo list 24/11/23
+ * *todo list 24/11/23
  * TODO: from train to airport
- * TODO: btn go back
+ * TODO: btn go back  DONE
+ * 
+ * *todo list 25/11/23
+ * TODO: function check bg-image
  */
 export default function Home() {
   return (
