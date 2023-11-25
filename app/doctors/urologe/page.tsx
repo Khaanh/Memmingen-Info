@@ -36,7 +36,6 @@ const handleTel = (telStr: string) => {
     }
   });
 
-
   // Check number for +49
   if (telNumbArr[0] == "4" && telNumbArr[1] == "9") {
     return telNumbArr.slice(2, telNumbArr.length).join("").trim();
@@ -44,6 +43,7 @@ const handleTel = (telStr: string) => {
     return telNumbArr.join("").trim();
   }
 }
+
 async function Urologe() {
   const doctorsData = await fs.readFile(process.cwd() + '/app/assets/category/urologe.json', 'utf8');
   const doctorsInfo = JSON.parse(doctorsData);
@@ -53,18 +53,7 @@ async function Urologe() {
       {doctorsInfo.map((doc: any) => {
         return (
           <div key={doc.name} className='border-2 rounded overflow-hidden border-cyan-400'>
-            <div className='mb-2 h-56 overflow-hidden bg-cover bg-no-repeat' style={{ backgroundImage: `url(${doc.picture})` }}>
-              {/* <div className='mb-2'>
-              <Image
-                src={`${doc.picture}`}
-                width={750}
-                height={220}
-                alt="picture"
-                quality={75}
-                loading="lazy"
-                unoptimized
-              /> */}
-            </div>
+            <div className='mb-2 h-80 overflow-hidden bg-cover bg-no-repeat' style={{ backgroundImage: `url(${doc.picture})` }}></div>
 
             <div className='px-3'>
               <h3 className='flex items-end mb-1'>

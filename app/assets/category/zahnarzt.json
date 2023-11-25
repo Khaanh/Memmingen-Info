@@ -9,6 +9,17 @@
     "comments": ["...там также есть русскоговорящие парень."]
   },
   {
+    "name": "Ilona George",
+    "city": "Memmingen",
+    "tel": "08331 61808",
+    "address": "Machnigstraße 4, 87700 Memmingen",
+    "google": "https://www.google.com/maps/dir//Machnigstra%C3%9Fe+4,+87700+Memmingen/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x479bf289e69699dd:0xf5cd51b6eddd06fb?sa=X&ved=2ahUKEwjozJ2K2d-CAxVSgf0HHU9ZCv4QwwV6BAgXEAA",
+    "website": "https://www.zahnarzt-mm.de/",
+    "picture": "https://www.zahnarzt-mm.de/files/obgImage-93.jpg",
+    "comments": [],
+    "stylesBgPosition": "center"
+  },
+  {
     "name": "Anton Stadler",
     "city": "Augsburg",
     "tel": "0821 65 07 52 90",

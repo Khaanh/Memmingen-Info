@@ -13,29 +13,47 @@ import Image from 'next/image';
  *  
  */
 
+/**
+ * it should be improved by:
+ * const extraSigns = ["+", " ", "", "-", "/", "(", ")"];
+ */
+
+// function check, put in order & call href="tel:"
+const handleTel = (telStr: string) => {
+  const telStrArr = telStr.split("");
+  const telNumbArr: string[] = [];
+
+  telStrArr.forEach((item) => {
+    if (
+      item !== "+" &&
+      item !== " " &&
+      item !== "-" &&
+      item !== "/" &&
+      item !== "(" &&
+      item !== ")"
+    ) {
+      telNumbArr.push(item)
+    }
+  });
+
+  // Check number for +49
+  if (telNumbArr[0] == "4" && telNumbArr[1] == "9") {
+    return telNumbArr.slice(2, telNumbArr.length).join("").trim();
+  } else {
+    return telNumbArr.join("").trim();
+  }
+}
+
 async function Frauarzt() {
   const doctorsData = await fs.readFile(process.cwd() + '/app/assets/category/frauarzt.json', 'utf8');
   const doctorsInfo = JSON.parse(doctorsData);
-
-  console.log('doctorsInfo', doctorsInfo)
 
   return (
     <div className='grid lg:grid-cols-2 gap-4'>
       {doctorsInfo.map((doc: any) => {
         return (
           <div key={doc.name} className='border-2 rounded overflow-hidden border-cyan-400'>
-            <div className='mb-2 h-56 overflow-hidden bg-cover bg-no-repeat' style={{ backgroundImage: `url(${doc.picture})` }}>
-              {/* <div className='mb-2'>
-              <Image
-                src={`${doc.picture}`}
-                width={750}
-                height={220}
-                alt="picture"
-                quality={75}
-                loading="lazy"
-                unoptimized
-              /> */}
-            </div>
+            <div className='mb-2 h-80 overflow-hidden bg-cover bg-no-repeat' style={{ backgroundImage: `url(${doc.picture})` }}></div>
 
             <div className='px-3'>
               <h3 className='flex items-end mb-1'>
@@ -52,7 +70,7 @@ async function Frauarzt() {
               </h3>
               <h3 className='flex items-end mb-2'>
                 <strong className='flex text-2xl text-gray-900 mr-3'>Телефон: </strong>
-                <a href="" className='text-2xl text-gray-800 underline decoration-blue-700 hover:decoration-blue-400 hover:decoration-wavy'>
+                <a href={`tel:+49${handleTel(`${doc.tel}`)}`} className='text-2xl text-gray-800 underline decoration-blue-700 hover:decoration-blue-400 hover:decoration-wavy'>
                   {doc.tel ? doc.tel : 'Информация временно отсутствует'}
                 </a>
               </h3>
