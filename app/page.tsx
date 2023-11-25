@@ -3,7 +3,7 @@ import Script from 'next/script'
 /**
  * todo list 23/11/23
  * TODO: function href="tel+..." DONE
- * TODO: Responsive 
+ * TODO: Responsive DONE
  * TODO: Google analytics DONE
  * TODO: Emergency-number page
  * 

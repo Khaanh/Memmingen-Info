@@ -1,6 +1,5 @@
 import React from 'react'
 import { promises as fs } from 'fs'
-import Image from 'next/image';
 
 /**
  * 22/11/23
@@ -45,7 +44,7 @@ const handleTel = (telStr: string) => {
 }
 
 async function Urologe() {
-  const doctorsData = await fs.readFile(process.cwd() + '/app/assets/category/urologe.json', 'utf8');
+  const doctorsData = await fs.readFile(process.cwd() + '/public/assets/category/urologe.json', 'utf8');
   const doctorsInfo = JSON.parse(doctorsData);
 
   return (

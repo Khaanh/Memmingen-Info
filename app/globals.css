@@ -26,7 +26,7 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
-.container {
-  /* margin: 0 auto; */
-  /* padding: 0 10px; */
+/* make it later */
+.link-active {
+  /* @apply border-sky-400 bg-blue-600 text-slate-50; */
 }

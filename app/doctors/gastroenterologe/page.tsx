@@ -45,7 +45,7 @@ const handleTel = (telStr: string) => {
 }
 
 async function Gastroenterologe() {
-  const doctorsData = await fs.readFile(process.cwd() + '/app/assets/category/gastroenterologe.json', 'utf8');
+  const doctorsData = await fs.readFile(process.cwd() + '/public/assets/category/gastroenterologe.json', 'utf8');
   const doctorsInfo = JSON.parse(doctorsData);
 
   return (

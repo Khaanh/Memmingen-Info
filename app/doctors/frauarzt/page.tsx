@@ -45,7 +45,7 @@ const handleTel = (telStr: string) => {
 }
 
 async function Frauarzt() {
-  const doctorsData = await fs.readFile(process.cwd() + '/app/assets/category/frauarzt.json', 'utf8');
+  const doctorsData = await fs.readFile(process.cwd() + '/public//assets/category/frauarzt.json', 'utf8');
   const doctorsInfo = JSON.parse(doctorsData);
 
   return (
