@@ -1,10 +1,11 @@
 'use client'
 import React from 'react'
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 export default function Navigation() {
   const pathName = usePathname();
+  const router = useRouter()
 
   const navItems = [
     {
@@ -20,10 +21,16 @@ export default function Navigation() {
     }
   ]
 
+  type Prop = {
+    href: string,
+    label: string
+  }
+
   return (
     <ul className='flex flex-wrap justify-center mx-auto'>
+      <button onClick={() => router.back()}>back</button>
       {
-        navItems.map((link) => {
+        navItems.map((link: Prop) => {
           return (
             <li key={link.label} className='mx-4 my-2'>
               <Link
