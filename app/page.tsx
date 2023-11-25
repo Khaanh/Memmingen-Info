@@ -2,9 +2,9 @@ import Script from 'next/script'
 
 /**
  * todo list 23/11/23
- * TODO: function href="tel+..."
+ * TODO: function href="tel+..." DONE
  * TODO: Responsive 
- * TODO: Google analytics -- done
+ * TODO: Google analytics DONE
  * TODO: Emergency-number page
  * 
  * todo list 24/11/23

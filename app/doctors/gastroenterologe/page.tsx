@@ -56,43 +56,43 @@ async function Gastroenterologe() {
             <div className='mb-2 h-80 overflow-hidden bg-cover bg-no-repeat' style={{ backgroundImage: `url(${doc.picture})` }}></div>
 
             <div className='px-3'>
-              <h3 className='flex items-end mb-1'>
+              <h3 className='flex flex-col item-start mb-3 sm:flex-row sm:items-end'>
                 <strong className='flex text-2xl text-gray-900 mr-3'>Имя: </strong>
                 <p className='text-2xl text-gray-800'>
                   {doc.name ? doc.name : 'Информация временно отсутствует'}
                 </p>
               </h3>
-              <h3 className='flex items-end mb-2'>
+              <h3 className='flex flex-col item-start mb-3 sm:flex-row sm:items-end'>
                 <strong className='flex text-2xl text-gray-900 mr-3'>Город: </strong>
                 <p className='text-2xl text-gray-800'>
                   {doc.city ? doc.city : 'Информация временно отсутствует'}
                 </p>
               </h3>
-              <h3 className='flex items-end mb-2'>
+              <h3 className='flex flex-col item-start mb-3 sm:flex-row sm:items-end'>
                 <strong className='flex text-2xl text-gray-900 mr-3'>Телефон: </strong>
                 <a href={`tel:+49${handleTel(`${doc.tel}`)}`} className='text-2xl text-gray-800 underline decoration-blue-700 hover:decoration-blue-400 hover:decoration-wavy'>
                   {doc.tel ? doc.tel : 'Информация временно отсутствует'}
                 </a>
               </h3>
-              <h3 className='flex items-end mb-2'>
+              <h3 className='flex flex-col item-start mb-3 sm:flex-row sm:items-end'>
                 <strong className='flex text-2xl text-gray-900 mr-3'>Адрес: </strong>
                 <p className='text-2xl text-gray-800'>
                   {doc.address ? doc.address : 'Информация временно отсутствует'}
                 </p>
               </h3>
-              <h3 className='flex items-end mb-2'>
+              <h3 className='flex flex-col item-start mb-3 sm:flex-row sm:items-end'>
                 <strong className='flex text-2xl text-gray-900 mr-3'>На карте: </strong>
                 <a href={`${doc.google}` ? `${doc.google}` : "#"} target='_blank' className='text-2xl text-gray-800 underline decoration-blue-700 hover:decoration-blue-400 hover:decoration-wavy'>
                   {doc.google !== "" ? doc.address : 'Информация временно отсутствует'}
                 </a>
               </h3>
-              <h3 className='flex items-end mb-2'>
+              <h3 className='flex flex-col item-start mb-3 sm:flex-row sm:items-end'>
                 <strong className='flex text-2xl text-gray-900 mr-3'>Веб-сайт: </strong>
                 <a href={`${doc.website}`} target='_blank' className='text-2xl text-gray-800 underline decoration-blue-700 hover:decoration-blue-400 hover:decoration-wavy'>
                   {doc.website ? doc.website : 'Информация временно отсутствует'}
                 </a>
               </h3>
-              <h3 className='flex items-end mb-2'>
+              <h3 className='flex flex-col item-start mb-3 sm:flex-row sm:items-end'>
                 <strong className='flex text-2xl text-gray-900 mr-3'>Комментарий: </strong>
                 <p className='text-2xl text-gray-800 italic'>
                   {doc.comments.length == 0 ? 'Пусто' : doc.comments}
