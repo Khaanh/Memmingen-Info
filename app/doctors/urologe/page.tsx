@@ -13,13 +13,40 @@ import Image from 'next/image';
  *  
  */
 
+/**
+ * it should be improved by:
+ * const extraSigns = ["+", " ", "", "-", "/", "(", ")"];
+ */
+
+// function check, put in order & call href="tel:"
+const handleTel = (telStr: string) => {
+  const telStrArr = telStr.split("");
+  const telNumbArr: string[] = [];
+
+  telStrArr.forEach((item) => {
+    if (
+      item !== "+" &&
+      item !== " " &&
+      item !== "-" &&
+      item !== "/" &&
+      item !== "(" &&
+      item !== ")"
+    ) {
+      telNumbArr.push(item)
+    }
+  });
+
+
+  // Check number for +49
+  if (telNumbArr[0] == "4" && telNumbArr[1] == "9") {
+    return telNumbArr.slice(2, telNumbArr.length).join("").trim();
+  } else {
+    return telNumbArr.join("").trim();
+  }
+}
 async function Urologe() {
   const doctorsData = await fs.readFile(process.cwd() + '/app/assets/category/urologe.json', 'utf8');
   const doctorsInfo = JSON.parse(doctorsData);
-
-  const handleTel = () => {
-    console.log('asdd')
-  }
 
   return (
     <div className='grid lg:grid-cols-2 gap-4'>
@@ -54,7 +81,7 @@ async function Urologe() {
               </h3>
               <h3 className='flex items-end mb-2'>
                 <strong className='flex text-2xl text-gray-900 mr-3'>Телефон: </strong>
-                <a href="" className='text-2xl text-gray-800 underline decoration-blue-700 hover:decoration-blue-400 hover:decoration-wavy'>
+                <a href={`tel:+49${handleTel(`${doc.tel}`)}`} className='text-2xl text-gray-800 underline decoration-blue-700 hover:decoration-blue-400 hover:decoration-wavy'>
                   {doc.tel ? doc.tel : 'Информация временно отсутствует'}
                 </a>
               </h3>
