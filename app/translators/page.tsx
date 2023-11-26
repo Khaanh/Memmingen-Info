@@ -13,7 +13,7 @@ const linkGroups = [
 export default function Page() {
   return (
     <div className='sm:h-[80vh]'>
-      <h1 className='text-2xl mb-4 sm:text-4xl font-bold sm:mb-10'>Телеграм-группы для поиска переводчиков:  </h1>
+      <h1 className='text-2xl mb-4 sm:text-4xl font-bold sm:mb-10 text-slate-900'>Телеграм-группы для поиска переводчиков:  </h1>
       <ul>
         {
           linkGroups.map((link, index) => {
