@@ -31,7 +31,7 @@ export default function Navigation() {
     <ul className='flex flex-wrap items-center justify-center mx-auto'>
       <button className='flex items-center border-2 border-blue-500  rounded-md px-2 hover:bg-blue-500 transition text-black hover:text-white hover:-translate-x-2 sm:mr-4' onClick={() => router.back()}>
         <ArrowSmallLeftIcon className='h-8 w-8' />
-        <span className='text-1xl'>назад</span>
+        <span className='text-2xl'>назад</span>
       </button>
       {
         navItems.map((link: Prop) => {
