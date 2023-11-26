@@ -3,7 +3,7 @@ import React from 'react'
 export default function FooterPage() {
   return (
     <footer className='flex flex-initial py-6 bg-gray-800'>
-      <div className="container px-2 lg:px-4 flex-initial mx-auto text-gray-100 bg-gray-800">
+      <div className="container px-3 lg:px-4 flex-initial mx-auto text-gray-100 bg-gray-800">
         <div className='flex flex-col'>
           <p className='mb-3'>
             С вопросами, исправлениями и новыми идеями обращаться:
