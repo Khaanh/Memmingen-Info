@@ -93,7 +93,7 @@ async function Zahnarzt() {
               </h3>
               <h3 className='flex flex-col items-start mb-3 sm:flex-row sm:items-end'>
                 <strong className='flex text-2xl text-gray-900 mr-3 min-w-fit'>Веб-сайт: </strong>
-                <a href={`${doc.website}`} target='_blank' className='truncate text-2xl break-all text-sky-600 font-medium underline decoration-indigo-500 hover:decoration-wavy'>
+                <a href={`${doc.website}`} target='_blank' className='text-2xl break-all text-sky-600 font-medium underline decoration-indigo-500 hover:decoration-wavy'>
                   {doc.website ? doc.website : 'Информация временно отсутствует'}
                 </a>
               </h3>

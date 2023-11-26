@@ -45,7 +45,7 @@ const handleTel = (telStr: string) => {
 }
 
 async function Hno() {
-  const doctorsData = await fs.readFile(process.cwd() + '/public//assets/category/hno.json', 'utf8');
+  const doctorsData = await fs.readFile(process.cwd() + '/public/assets/category/hno.json', 'utf8');
   const doctorsInfo = JSON.parse(doctorsData);
 
   return (
@@ -53,7 +53,12 @@ async function Hno() {
       {doctorsInfo.map((doc: any) => {
         return (
           <div key={doc.name} className='border border-gray-300 rounded-lg transition shadow hover:border-gray-600'>
-            <div className='mb-2 h-80 overflow-hidden bg-cover bg-no-repeat' style={{ backgroundImage: `url(${doc.picture})` }}></div>
+            <div className='mb-2 h-48 overflow-hidden bg-cover bg-no-repeat sm:h-80' style={
+              {
+                backgroundImage: `url(${doc.picture})`,
+                backgroundPosition: `${doc.stylesBgPostion}` ? doc.stylesBgPosition : 'initial'
+              }
+            }></div>
 
             <div className='px-3'>
               <h3 className='flex flex-col item-start mb-3 sm:flex-row sm:items-end'>
@@ -62,37 +67,37 @@ async function Hno() {
                   {doc.name ? doc.name : 'Информация временно отсутствует'}
                 </p>
               </h3>
-              <h3 className='flex flex-col item-start mb-3 sm:flex-row sm:items-end'>
+              <h3 className='flex flex-col items-start mb-3 sm:flex-row sm:items-end'>
                 <strong className='flex text-2xl text-gray-900 mr-3'>Город: </strong>
                 <p className='text-2xl text-gray-800'>
                   {doc.city ? doc.city : 'Информация временно отсутствует'}
                 </p>
               </h3>
-              <h3 className='flex flex-col item-start mb-3 sm:flex-row sm:items-end'>
+              <h3 className='flex flex-col items-start mb-3 sm:flex-row sm:items-end'>
                 <strong className='flex text-2xl text-gray-900 mr-3'>Телефон: </strong>
                 <a href={`tel:+49${handleTel(`${doc.tel}`)}`} className='text-2xl font-semibold text-red-500 underline  decoration-sky-500  hover:decoration-wavy'>
                   {doc.tel ? doc.tel : 'Информация временно отсутствует'}
                 </a>
               </h3>
-              <h3 className='flex flex-col item-start mb-3 sm:flex-row sm:items-end'>
+              <h3 className='flex flex-col items-start mb-3 sm:flex-row sm:items-end'>
                 <strong className='flex text-2xl text-gray-900 mr-3'>Адрес: </strong>
                 <p className='text-2xl text-gray-800'>
                   {doc.address ? doc.address : 'Информация временно отсутствует'}
                 </p>
               </h3>
-              <h3 className='flex flex-col item-start mb-3 sm:flex-row sm:items-end'>
+              <h3 className='flex flex-col items-start mb-3 sm:flex-row sm:items-end'>
                 <strong className='flex text-2xl text-gray-900 mr-3'>На карте: </strong>
                 <a href={`${doc.google}` ? `${doc.google}` : "#"} target='_blank' className='text-2xl break-all text-sky-600 font-medium underline decoration-indigo-500 hover:decoration-wavy'>
                   {doc.google !== "" ? doc.address : 'Информация временно отсутствует'}
                 </a>
               </h3>
-              <h3 className='flex flex-col item-start mb-3 sm:flex-row sm:items-end'>
-                <strong className='flex text-2xl text-gray-900 mr-3 min-w-fit '>Веб-сайт: </strong>
-                <a href={`${doc.website}`} target='_blank' className='truncate text-2xl break-all text-sky-600 font-medium underline decoration-indigo-500 hover:decoration-wavy'>
+              <h3 className='flex flex-col items-start mb-3 sm:flex-row sm:items-end'>
+                <strong className='flex text-2xl text-gray-900 mr-3 min-w-fit'>Веб-сайт: </strong>
+                <a href={`${doc.website}`} target='_blank' className='text-2xl break-all text-sky-600 font-medium underline decoration-indigo-500 hover:decoration-wavy'>
                   {doc.website ? doc.website : 'Информация временно отсутствует'}
                 </a>
               </h3>
-              <h3 className='flex flex-col item-start mb-3 sm:flex-row sm:items-end'>
+              <h3 className='flex flex-col items-start mb-3 sm:flex-row sm:items-end'>
                 <strong className='flex text-2xl text-gray-900 mr-3'>Комментарий: </strong>
                 <p className='text-2xl text-gray-800 italic'>
                   {doc.comments.length == 0 ? 'Пусто' : doc.comments}
