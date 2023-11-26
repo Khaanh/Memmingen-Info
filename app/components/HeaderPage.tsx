@@ -7,7 +7,7 @@ import Image from 'next/image';
 export default function HeaderPage() {
   return (
     <header className='flex flex-initial text-gray-950 mt-6 mb-14'>
-      <div className="container flex-initial mx-auto px-4">
+      <div className="container px-1 sm:px-2 lg:px-4 flex-initial mx-auto">
         <nav>
           <Link className='flex items-center justify-center mb-6' href='/'>
             <Image

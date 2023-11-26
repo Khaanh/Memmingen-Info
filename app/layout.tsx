@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-white`}>
         <div className='flex flex-col justify-between min-h-screen'>
           <HeaderPage />
-          <main className="container lg:px-4 flex-initial mx-auto px-2 mb-10">
+          <main className="container px-2 lg:px-4 flex-initial mx-auto mb-10">
             {children}
           </main>
           <FooterPage />
