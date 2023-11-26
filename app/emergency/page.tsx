@@ -32,7 +32,8 @@ export default async function Page() {
 
   /**
    *26 / 11 / 23 
-   * TODO: Must be improved !!!
+   * TODO: Email display - Must be improved !!!
+   * TODO: Fix link - website
    */
   // const handleMail = (emailArr: any) => {
   //   const email = emailArr;
@@ -75,7 +76,7 @@ export default async function Page() {
 
               {
                 info.website ? (
-                  <a href={info.website} target='_blank' className='block text-2xl text-sky-600 font-medium underline decoration-indigo-500 hover:decoration-wavy mb-10 break-words ...' >{info.website}</a>
+                  <a href={`${info.website}`} target='_blank' className='block text-2xl text-sky-600 font-medium underline decoration-indigo-500 hover:decoration-wavy mb-10 break-words ...' >{info.website}</a>
                 ) : (null)
               }
 
