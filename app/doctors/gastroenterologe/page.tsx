@@ -1,6 +1,5 @@
 import React from 'react'
 import { promises as fs } from 'fs'
-import Image from 'next/image';
 
 /**
  * 22/11/23
