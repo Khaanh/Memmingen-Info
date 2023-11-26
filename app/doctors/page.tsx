@@ -50,7 +50,7 @@ export default async function Doctors() {
             doctorsCategory.map((category) => {
               return (
                 <>
-                  <div key={category.category} className='border-2 text-gray-900 border-cyan-200 rounded-lg px-3 py-2 m-2 inline-flex text-center text-3xl transition hover:-translate-y-1'>
+                  <div key={category.category} className='border-2 text-gray-900 border-cyan-200 rounded-lg px-3 py-2 m-2 inline-flex text-center text-3xl transition hover:-translate-y-0.5'>
                     <Link href={`doctors/${category.category}`} className='text-center'>{category.translate}</Link>
                   </div>
                 </>
