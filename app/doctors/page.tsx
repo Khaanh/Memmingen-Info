@@ -40,6 +40,10 @@ export default async function Doctors() {
       category: "gastroenterologe",
       translate: "Гастроэнтеролог"
     },
+    {
+      category: "hno",
+      translate: "ЛОР"
+    },
   ]
 
   return (

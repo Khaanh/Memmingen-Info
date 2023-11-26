@@ -15,7 +15,7 @@ import Script from 'next/script'
  * TODO: function check bg-image
  * 
  * *todo list 26/11/23
- * TODO: add Otorhinolaryngologist
+ * TODO: add Otorhinolaryngologist DONE
  */
 export default function Home() {
   return (
