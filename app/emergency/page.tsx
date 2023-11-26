@@ -44,7 +44,7 @@ export default async function Page() {
       <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-8'>
         {emergencyInfo.map((info: Prop) => {
           return (
-            <li key={info.title} className='p-2 sm:p-4 border border-gray-300 rounded-lg transition shadow hover:border-gray-600'>
+            <li key={info.title} className='p-2 text-slate-950 sm:p-4 border border-gray-300 rounded-lg transition shadow hover:border-gray-600'>
               <Image
                 src={`/img/${info.img}`}
                 width={128}
@@ -53,7 +53,7 @@ export default async function Page() {
                 className='mb-6'
               />
 
-              <h1 className='text-2xl font-semibold mb-2'>{info.title}</h1>
+              <h1 className='text-2xl text-slate-900 font-semibold mb-2'>{info.title}</h1>
 
               {
                 info.tel ? (
