@@ -12,6 +12,9 @@ export default function FooterPage() {
           <i className='mb-1'>или</i>
           <a href="mailto:khanh13nguyen13@gmail.com" className='break-all text-sky-400 font-medium underline decoration-indigo-500 hover:decoration-wavy'>Email: khanh13nguyen13@gmail.com</a>
         </div>
+        <div className='flex justify-center text-gray-600	text-sm'>
+          Copyright © 2023. All rights reserved
+        </div>
       </div>
     </footer>
   )

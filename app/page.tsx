@@ -34,6 +34,11 @@ export default function Home() {
           `}
       </Script>
 
+      <div className='flex items-center flex-col'>
+        <h1 className='text-3xl sm:text-4xl text-center text-gray-950 font-semibold mb-4'>Добро пожаловать на наш сайт</h1>
+        <h2 className='text-2xl sm:text-3xl lg:w-3/4 text-gray-950 text-center font-medium'>Проект создан для помощи беженцам в поисках специалистов/врачей, которые говорят на русском/украинском языке в таких городах: <br /> Мемминген, Кемптен, Аугсбур, Мюнхен</h2>
+      </div>
+
     </div>
   )
 }
