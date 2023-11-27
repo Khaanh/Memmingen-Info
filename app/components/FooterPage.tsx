@@ -4,7 +4,7 @@ export default function FooterPage() {
   return (
     <footer className='flex flex-initial py-6 bg-gray-800'>
       <div className="container px-3 lg:px-4 flex-initial mx-auto text-gray-100 bg-gray-800">
-        <div className='flex flex-col'>
+        <div className='flex flex-col mb-2'>
           <p className='mb-3'>
             С вопросами и предложениями по улучшению проекта - обращайтесь:
           </p>
