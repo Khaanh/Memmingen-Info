@@ -62,6 +62,9 @@ export default async function Doctors() {
             })
           }
         </div>
+        <div>
+          <h1>Страница</h1>
+        </div>
       </div>
     </div>
   )
