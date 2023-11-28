@@ -53,14 +53,14 @@ async function Zahnarzt() {
       {doctorsInfo.map((doc: any) => {
         return (
           <div key={doc.name} className='border border-gray-300 rounded-lg transition shadow hover:border-gray-600'>
-            <div className='mb-2 h-48 overflow-hidden bg-cover bg-no-repeat sm:h-80' style={
+            <div className='hidden mb-2 h-48 overflow-hidden bg-cover bg-no-repeat sm:h-80' style={
               {
                 backgroundImage: `url(${doc.picture})`,
                 backgroundPosition: `${doc.stylesBgPostion}` ? doc.stylesBgPosition : 'initial'
               }
             }></div>
 
-            <div className='px-3'>
+            <div className='p-3'>
               <h3 className='flex flex-col item-start mb-3 sm:flex-row sm:items-end'>
                 <strong className='flex text-2xl text-gray-900 mr-3'>Имя: </strong>
                 <p className='text-2xl text-gray-800'>

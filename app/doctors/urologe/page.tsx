@@ -52,9 +52,9 @@ async function Urologe() {
       {doctorsInfo.map((doc: any) => {
         return (
           <div key={doc.name} className='border border-gray-300 rounded-lg transition shadow hover:border-gray-600'>
-            <div className='mb-2 h-80 overflow-hidden bg-cover bg-no-repeat' style={{ backgroundImage: `url(${doc.picture})` }}></div>
+            <div className='hidden mb-2 h-80 overflow-hidden bg-cover bg-no-repeat' style={{ backgroundImage: `url(${doc.picture})` }}></div>
 
-            <div className='px-3'>
+            <div className='p-3'>
               <h3 className='flex flex-col item-start mb-3 sm:flex-row sm:items-end'>
                 <strong className='flex text-2xl text-gray-900 mr-3'>Имя: </strong>
                 <p className='text-2xl text-gray-800'>
