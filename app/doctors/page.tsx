@@ -49,7 +49,7 @@ export default async function Doctors() {
   return (
     <div className='flex min-h-screen flex-col'>
       <div>
-        <div className='flex flex-wrap justify-center'>
+        <div className='hidden flex flex-wrap justify-center'>
           {
             doctorsCategory.map((category) => {
               return (
