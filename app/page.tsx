@@ -16,6 +16,9 @@ import Script from 'next/script'
  * 
  * *todo list 26/11/23
  * TODO: add Otorhinolaryngologist DONE
+ * 
+ * *todo list 28/11/23
+ * TODO: add dynamic router to doctors pages [id]
  */
 export default function Home() {
   return (

@@ -15,8 +15,6 @@ export default async function Page() {
   const emergencyCalls = await fs.readFile(process.cwd() + '/public/assets/emergency/emergency.json', 'utf8');
   const emergencyInfo = JSON.parse(emergencyCalls);
 
-  console.log(emergencyInfo)
-
   const handleMobile = (strTel: string) => {
     const arrTel = strTel.split('');
     const numberTel: string[] = [];
