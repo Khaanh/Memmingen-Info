@@ -64,13 +64,13 @@ export default async function Doctors() {
         </div>
         <div>
           <h1 className='text-3xl md:text-5xl text-center text-gray-900 mb-5'>Извините за временные неудобства, страница временно недоступна в связи с обработкой данных</h1>
-          <h1 className='text-2xl md:text-3xl text-center text-gray-900 mr-3'>Если вам нужны контакты:
+          {/* <h1 className='text-2xl md:text-3xl text-center text-gray-900 mr-3'>Если вам нужны контакты:
             <span className='italic text-gray-800'>
               стоматолога, дерматолога, уролога, гинеколога, гастроэнтеролога и ЛОРа - вы можете обратиться:
             </span>
             <br />
             <a href="https://t.me/Kh2nh" className='text-2xl break-all text-sky-600 font-medium underline decoration-indigo-500 hover:decoration-wavy'>telegram: https://t.me/Kh2nh</a>
-          </h1>
+          </h1> */}
         </div>
       </div>
     </div>
