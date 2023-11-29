@@ -44,7 +44,7 @@ const handleTel = (telStr: string) => {
 }
 
 async function Dermatologe() {
-  const doctorsData = await fs.readFile(process.cwd() + '/public//assets/category/dermatologe.json', 'utf8');
+  const doctorsData = await fs.readFile(process.cwd() + '/public/assets/category/dermatologe.json', 'utf8');
   const doctorsInfo = JSON.parse(doctorsData);
 
   return (
