@@ -33,10 +33,6 @@ export default async function Page() {
    * TODO: Email display - Must be improved !!!
    * TODO: Fix link - website
    */
-  // const handleMail = (emailArr: any) => {
-  //   const email = emailArr;
-  //   return email
-  // }
 
   return (
     <div>
