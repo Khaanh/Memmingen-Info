@@ -5,7 +5,10 @@ import train from "../../public/img/train.png";
 const Transport = () => {
 	return (
 		<div>
-			<h1 className="text-center text-slate-900  text-4xl font-bold mb-4">
+			<h1 className="text-center text-slate-900 font-bold mb-4 text-6xl">
+				Страница находится в разработке...
+			</h1>
+			{/* <h1 className="text-center text-slate-900  text-4xl font-bold mb-4">
 				Как добраться:
 			</h1>
 
@@ -13,10 +16,11 @@ const Transport = () => {
 				<li>
 					Aeroport Train
 					<Image src={airport} alt="airport" width={65} height={65} />
+
 					<Image src={train} alt="airport" width={65} height={65} />
 				</li>
 				<li>Aeroport Train</li>
-			</ul>
+			</ul> */}
 		</div>
 	);
 };
