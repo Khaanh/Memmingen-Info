@@ -1,4 +1,3 @@
-import { log } from "console";
 import { promises as fs } from "fs";
 import Image from "next/image";
 
@@ -40,7 +39,7 @@ export default async function Page() {
 	return (
 		<div>
 			<div className="px-1 mb-4 md:px-20 md:mb-14">
-				<h1 className="text-xl mb-4 md:text-3xl">
+				<h1 className="text-xl mb-4 md:text-3xl text-slate-900">
 					☎️ При разговоре по телефону будьте готовы ответить на эти вопросы.
 					Подготовьте памятку на немецком языке и носите её с собой (5-W Fragen)
 				</h1>
